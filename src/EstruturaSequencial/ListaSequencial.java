@@ -119,6 +119,7 @@ public class ListaSequencial {
         dias = (idade % 365) % 30;
 
         System.out.printf("Você tem\n%d Anos\n%d Meses\n%d Dias\n", anos, meses, dias);
+        scanner.close();
     }
 
     // Criar um algoritmo que receba uma determinada hora (hora e minutos separados)
@@ -168,6 +169,7 @@ public class ListaSequencial {
         ms = scanner.nextDouble();
         km = ms * 3.6;
         System.out.printf("%.2f M/s correspondem a %.2f Km/h", ms, km);
+        scanner.close();
     }
 
     // Criar um algoritmo que leia uma distância e o total de litros de combustível
