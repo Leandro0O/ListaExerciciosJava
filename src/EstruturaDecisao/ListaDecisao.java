@@ -1,6 +1,6 @@
 package EstruturaDecisao;
 
-import java.sql.Blob;
+
 import java.util.Scanner;
 
 
@@ -338,7 +338,5 @@ public class ListaDecisao{
             System.out.printf("Salario: R$ %.2f",s);
         }
     }
-
-    
 
 }
