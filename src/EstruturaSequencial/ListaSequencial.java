@@ -3,12 +3,12 @@ package EstruturaSequencial;
 import java.util.Scanner;
 
 public class ListaSequencial {
-
+    Scanner scanner = new Scanner(System.in);
     // Criar um algoritmo que leia um número inteiro e apresente na tela o seu
     // antecedente e o seu sucessor.
     public void ex1() {
         int num;
-        Scanner scanner = new Scanner(System.in);
+        
         System.out.println("Informe um numero:");
         num = scanner.nextInt();
         System.out.printf("O antecessor é: %d\n", num - 1);
@@ -507,4 +507,6 @@ public class ListaSequencial {
         System.out.printf("A area do quadrado é %.2f",area);
           scanner.close();
     }
+
+    
 }
