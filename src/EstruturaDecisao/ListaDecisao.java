@@ -1,6 +1,4 @@
 package EstruturaDecisao;
-
-
 import java.util.Scanner;
 
 
@@ -210,7 +208,6 @@ public class ListaDecisao{
         if( quant < 12){
             valor = quant * 1.30;
             System.out.printf("Quantidade: %d\nValor R$: %.2f",quant,valor);
-
         }else{
             valor = quant * 1.00;
             System.out.printf("Quantidade: %d\nValor R$: %.2f",quant,valor);
@@ -281,7 +278,6 @@ public class ListaDecisao{
         B = (quant * 0.50) + 2.50;
         if( A > B ){
             System.out.println("O criterio B um vale mais a pena");
-
         }else{
             System.out.println("O criterio A vale mais a pena");
         }
@@ -297,15 +293,13 @@ public class ListaDecisao{
         sex =  scanner.nextLine();
         System.out.println("Informe a sua altura:");
         altura = scanner.nextDouble();
-        
         if(sex.equalsIgnoreCase("M")){
             pesoM = (72.7 * altura) - 58;
             System.out.printf("Peso ideal: %.2f Kg",pesoM);
         }else{
             pesoF = (62.1 * altura) - 44.7;
             System.out.printf("Peso ideal: %.2f Kg",pesoF);
-        }
-        
+        }  
     }
 
     // Criar um algoritmo que leia a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os minutos), calcule e apresente na tela a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
@@ -336,6 +330,55 @@ public class ListaDecisao{
         }else{
             s = s + (s * 0.05);
             System.out.printf("Salario: R$ %.2f",s);
+        }
+    }
+
+    // Criar um algoritmo que leia o peso e a altura de uma pessoa, calcule o seu IMC (Índice de Massa Corporal), e apresente na tela uma mensagem informando se a pessoa está ou não no seu peso ideal, de acordo com a tabela abaixo. A fórmula para calcular o IMC é: 
+    public void ex26(){
+        System.out.println("Informe a altura:");
+        Double h = scanner.nextDouble();
+        System.out.println("Informe o peso:");
+        Double w = scanner.nextDouble();
+        double imc = w / Math.pow(h,2.0);
+        if(imc < 20){
+            System.out.printf("IMC: %.2f\nAbaixo do peso!\n",imc);
+        }else if(imc <= 20 || imc < 25){
+            System.out.printf("IMC: %.2f\nPeso ideal!\n",imc);
+        }else{
+            System.out.printf("IMC: %.2f\nAcima do peso!\n",imc);
+        }
+    }
+
+    // Criar um algoritmo que leia o código de origem de um produto e apresente na tela a sua procedência. A procedência obedece a seguinte tabela:
+    public void ex27(){
+        System.out.println("Informe o código d eorigem do produto:");
+        int cod = scanner.nextInt();
+       if(cod == 5 || cod == 6){
+            System.out.println("Nordeste");
+       }else if(cod >= 7 && cod <=9){
+        System.out.println("Sudeste");
+       }else if(cod >= 10 && cod <=20){
+        System.out.println("Centro-Oeste");
+       }else if(cod >= 21 && cod <= 30){
+        System.out.println("Nordeste");
+       }else{
+        System.out.println("Cosigo invalido");
+       }
+    }
+
+    // Criar um algoritmo que leia o salário de um funcionário e calcule o imposto de renda (IR) a ser pago a partir do salário do funcionário. Se o salário for menor que R$ 1.257,12 está isento do imposto. Se o salário for entre R$ 1.257,12 e R$ 2.510,00 (inclusive), a alíquota do imposto é 17%. Se o salário for superior a R$ 2.510,00, a alíquota do imposto é 28%. Apresentar na tela o salário bruto, o salário líquido e o valor do imposto.
+    public void ex28(){
+        double s, sb;
+        System.out.println("Informe o salário:");
+        s = scanner.nextDouble();
+        if(s < 1257.12){
+            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nIsento de imposto\n",s,s);
+        }else if(s > 1257.12 && s <= 2510){
+           sb = s+(s * 0.17);
+            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nImposto de 17%%\n",sb,s);
+        }else{
+          sb = s+(s * 0.28);
+            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nImposto de 28%%\n",sb,s);
         }
     }
 
