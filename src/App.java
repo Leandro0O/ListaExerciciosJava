@@ -6,7 +6,7 @@ public class App {
         ListaSequencial sequencial = new ListaSequencial();
         ListaDecisao decisao = new ListaDecisao();
 
-        // sequencial.ex1();
-            decisao.ex35();
+        sequencial.ex36();
+            
     }
 }
