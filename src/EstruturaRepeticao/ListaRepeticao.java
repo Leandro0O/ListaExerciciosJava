@@ -55,4 +55,27 @@ public class ListaRepeticao {
         }
     }
 
+    // O número 3025 possui a seguinte característica:  e . Criar um algoritmo que apresente na tela todos os números de quatro algarismos que possuem a característica citada.
+    public void ex07(){
+        for(int i = 1000; i < 9999; i++){
+            int n1 = i/100;
+            int n2 = i%100;
+            int soma = n1+n2;
+            int quad = soma* soma;
+            if(i == quad){
+                System.out.println(i);
+            }
+        }
+    }
+
+    // Criar um algoritmo que leia um número inteiro e apresente na tela o seu fatorial. (Dica: 5! = 5x4x3x2x1 = 120).
+    public void ex08(){
+        int n1,f=1;
+        System.out.println("Informe um numero para saber o seu fatorial:");
+        n1 = scanner.nextInt();
+        for(int i = 1; i <= n1; i++){
+            f *=i;
+        }
+        System.out.printf("%d ! = %d", n1,f);
+}
 }
