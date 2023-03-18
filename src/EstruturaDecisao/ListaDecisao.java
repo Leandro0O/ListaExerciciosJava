@@ -339,6 +339,43 @@ public class ListaDecisao{
         }
     }
 
+    // Criar um algoritmo que leia o peso e a altura de uma pessoa, calcule o seu IMC (Índice de Massa Corporal), e apresente na tela uma mensagem informando se a pessoa está ou não no seu peso ideal, de acordo com a tabela abaixo. A fórmula para calcular o IMC é: 
+    public void ex26(){
+        Double peso, altura,imc;
+        System.out.println("Informe o peso:");
+        peso = scanner.nextDouble();
+        System.out.println("Informe a altura:");
+        altura = scanner.nextDouble();
+        imc = peso / (altura * altura);
+        if(imc <20){
+            System.out.println("Abaixo do peso");
+        }else if(imc <=20 && imc < 25){
+            System.out.println("Peso ideal");
+        }else{
+            System.out.println("Acima do peso");
+        }
+    }
+
+    // Criar um algoritmo que leia o código de origem de um produto e apresente na tela a sua procedência. A procedência obedece a seguinte tabela:
+    public void ex27(){
+        int cod;
+        System.out.println("Informe o codigo do produto:");
+        cod = scanner.nextInt();
+        if(cod == 5 && cod == 6){
+            System.out.println("Nordeste");
+        }else if(cod >= 7 && cod <=9){
+            System.out.println("Sudeste");
+        }else if(cod >= 10 && cod <= 20){
+            System.out.println("Centro-Oeste");
+        }else if(cod >= 21 && cod <= 30){
+            System.out.println("Nordeste");
+        }else{
+            System.out.println("Codigo invalido");
+        }
+
+
+    }
+
     
 
 }
