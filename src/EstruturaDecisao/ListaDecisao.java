@@ -1,6 +1,4 @@
 package EstruturaDecisao;
-
-import java.sql.Blob;
 import java.util.Scanner;
 
 
@@ -210,7 +208,6 @@ public class ListaDecisao{
         if( quant < 12){
             valor = quant * 1.30;
             System.out.printf("Quantidade: %d\nValor R$: %.2f",quant,valor);
-
         }else{
             valor = quant * 1.00;
             System.out.printf("Quantidade: %d\nValor R$: %.2f",quant,valor);
@@ -281,7 +278,6 @@ public class ListaDecisao{
         B = (quant * 0.50) + 2.50;
         if( A > B ){
             System.out.println("O criterio B um vale mais a pena");
-
         }else{
             System.out.println("O criterio A vale mais a pena");
         }
@@ -297,15 +293,13 @@ public class ListaDecisao{
         sex =  scanner.nextLine();
         System.out.println("Informe a sua altura:");
         altura = scanner.nextDouble();
-        
         if(sex.equalsIgnoreCase("M")){
             pesoM = (72.7 * altura) - 58;
             System.out.printf("Peso ideal: %.2f Kg",pesoM);
         }else{
             pesoF = (62.1 * altura) - 44.7;
             System.out.printf("Peso ideal: %.2f Kg",pesoF);
-        }
-        
+        }  
     }
 
     // Criar um algoritmo que leia a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os minutos), calcule e apresente na tela a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.

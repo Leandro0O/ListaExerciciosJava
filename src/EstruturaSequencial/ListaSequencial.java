@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class ListaSequencial {
 
+    Scanner scanner = new Scanner(System.in);
+
     // Criar um algoritmo que leia um número inteiro e apresente na tela o seu
     // antecedente e o seu sucessor.
     public void ex1() {
         int num;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe um numero:");
         num = scanner.nextInt();
         System.out.printf("O antecessor é: %d\n", num - 1);
@@ -23,7 +25,7 @@ public class ListaSequencial {
     // –9).
     public void ex2() {
         int num;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("informe um número:");
         num = scanner.nextInt();
         System.out.printf("O numero consecutivo de %d é %d", num, num + 1);
@@ -33,7 +35,7 @@ public class ListaSequencial {
     // Criar um algoritmo que leia dois números inteiros e apresenta na tela a soma,
     // subtração, multiplicação e divisão dos respectivos números.
     public void ex3() {
-        Scanner scanner = new Scanner(System.in);
+
         int num1, num2;
 
         System.out.println("Informe um númeor: ");
@@ -53,7 +55,7 @@ public class ListaSequencial {
     // EstruturaSequencial;//Criar um algoritmo que leia dois números inteiros e
     // apresente na tela o resto da divisão do primeiro pelo segundo número.
     public void ex4() {
-        Scanner scanner = new Scanner(System.in);
+
         Integer num1, num2;
 
         System.out.println("Informe o primeiro núemro:");
@@ -70,7 +72,7 @@ public class ListaSequencial {
     // Criar um algoritmo que leia a idade de uma pessoa expressa em anos e
     // apresente na tela esta idade expressa em meses e dias.
     public void ex5() {
-        Scanner scanner = new Scanner(System.in);
+
         int anos, meses, dias;
 
         System.out.println("Informe sua idade em anos: ");
@@ -87,7 +89,6 @@ public class ListaSequencial {
     // dias e apresente na tela a idade dessa pessoa expressa apenas em dias.
     // Considerar ano com 365 dias e mês com 30 dias
     public void ex6() {
-        Scanner scanner = new Scanner(System.in);
 
         int anos, meses, dias;
         System.out.println("Informe sua idade");
@@ -109,7 +110,7 @@ public class ListaSequencial {
     // apresente na tela a idade dessa pessoa expressa em anos, meses e dias.
     // Considerar ano com 365 dias e mês com 30 dias.
     public void ex7() {
-        Scanner scanner = new Scanner(System.in);
+
         int idade, anos, meses, dias;
         System.out.println("Informe sua idade em dias: ");
         idade = scanner.nextInt();
@@ -125,7 +126,7 @@ public class ListaSequencial {
     // Criar um algoritmo que receba uma determinada hora (hora e minutos separados)
     // e apresente na tela a hora em minutos.
     public void ex8() {
-        Scanner scanner = new Scanner(System.in);
+
         int horas, min, totalmin;
 
         System.out.println("Informe as horas");
@@ -145,7 +146,7 @@ public class ListaSequencial {
     // expressa em segundos e apresente-o na tela expresso em horas, minutos e
     // segundos.
     public void ex9() {
-        Scanner scanner = new Scanner(System.in);
+
         int totalseg, min, horas, seg;
         System.out.println("Informe a hora em segundos: ");
         totalseg = scanner.nextInt();
@@ -163,7 +164,7 @@ public class ListaSequencial {
     // segundo) e apresente na tela a velocidade em km/h. Para efetuar a conversão,
     // multiplique o valor em m/s por 3.6.
     public void ex10() {
-        Scanner scanner = new Scanner(System.in);
+
         double ms, km;
         System.out.println("Informe a velocidade em metros/s: ");
         ms = scanner.nextDouble();
@@ -177,7 +178,7 @@ public class ListaSequencial {
     // consumo médio de combustível.
     public void ex11() {
         double dis, cons, media;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe a distancia percorrida: ");
         dis = scanner.nextDouble();
         System.out.println("Informe o consumo de combustivel:");
@@ -191,7 +192,7 @@ public class ListaSequencial {
     // do salário mínimo e apresente na tela quantos salários mínimos ganha esse
     // funcionário.
     public void ex12() {
-        Scanner scanner = new Scanner(System.in);
+
         double s, sm, qs;
         System.out.println("Informe o seu salario:");
         s = scanner.nextDouble();
@@ -205,7 +206,7 @@ public class ListaSequencial {
     // Criar um algoritmo que receba três notas de um aluno e apresente na tela a
     // média aritmética entre essas notas.
     public void ex13() {
-        Scanner scanner = new Scanner(System.in);
+
         double n1, n2, n3, m;
         System.out.println("Informe a primeira nota:");
         n1 = scanner.nextDouble();
@@ -222,7 +223,7 @@ public class ListaSequencial {
     // Criar um programa que calcule e apresente na tela a área de um retângulo.
     // Fórmula: .
     public void ex14() {
-        Scanner scanner = new Scanner(System.in);
+
         double b, h, a;
         System.out.println("Informe o tamanho da base");
         b = scanner.nextDouble();
@@ -236,7 +237,7 @@ public class ListaSequencial {
     // Criar um programa que calcule e apresenta na tela a área de um triângulo.
     // Fórmula: .
     public void ex15() {
-        Scanner scanner = new Scanner(System.in);
+
         double b, h, a;
         System.out.println("Informe o tamanho da base");
         b = scanner.nextDouble();
@@ -251,7 +252,7 @@ public class ListaSequencial {
     // raio R, em que R é um dado fornecido pelo usuário. O volume de uma esfera é
     // dado por .
     public void ex16() {
-        Scanner scanner = new Scanner(System.in);
+
         double r, v;
         System.out.println("Informe o raio:");
         r = scanner.nextDouble();
@@ -264,7 +265,7 @@ public class ListaSequencial {
     // Criar um algoritmo que calcule e apresente na tela a área de um trapézio.
     // Fórmula: .
     public void ex17() {
-        Scanner scanner = new Scanner(System.in);
+
         double bma, bme, h, a;
         System.out.println("Informe a base menor:");
         bme = scanner.nextDouble();
@@ -281,7 +282,7 @@ public class ListaSequencial {
     // Criar um algoritmo que calcule e apresente na tela o volume de uma caixa
     // retangular, utilizando a fórmula: .
     public void ex18() {
-        Scanner scanner = new Scanner(System.in);
+
         double c, l, a, v;
         System.out.println("Informe o comprimento:");
         c = scanner.nextDouble();
@@ -299,7 +300,7 @@ public class ListaSequencial {
     // ​Math.pow()​. Exemplo: 5 elevado ao cubo ficaria Math.pow(5, 3) ​. Você pode
     // trocar esses números por variáveis.
     public void ex19() {
-        Scanner scanner = new Scanner(System.in);
+
         double base, expo, potencia;
 
         System.out.println("Informe a base:");
@@ -316,7 +317,7 @@ public class ListaSequencial {
     // dois números. O quadrado de um número A é representado por .
     public void ex20() {
         double num1, num2, soma;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe o primeiro numero:");
         num1 = Math.pow(scanner.nextDouble(), 2);
         System.out.println("Informe o segundo numero:");
@@ -332,7 +333,7 @@ public class ListaSequencial {
 
     public void ex21() {
         double qd, cot, re;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe a quantidade de dolares:$ ");
         qd = scanner.nextDouble();
         System.out.println("Informe a cotação do dolar:R$ ");
@@ -346,7 +347,7 @@ public class ListaSequencial {
     // da soma dos quadrados dos três valores lidos.
     public void ex22() {
         double num1, num2, num3, soma;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe o primeiro numero:");
         num1 = Math.pow(scanner.nextDouble(), 2);
         System.out.println("Informe o segundo numero:");
@@ -364,7 +365,7 @@ public class ListaSequencial {
 
     public void ex23() {
         double dl, qf;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe a quantidade de dias letivos:");
         dl = scanner.nextDouble();
         qf = dl + (dl * 0.25) - dl;
@@ -378,7 +379,6 @@ public class ListaSequencial {
     public void ex24() {
         double sb, rea, ns;
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Informe o seu salario R$ ");
         sb = scanner.nextDouble();
         System.out.println("Informe o percentual de reajuste %");
@@ -393,7 +393,7 @@ public class ListaSequencial {
     // da mão-de-obra para levantá-lo.
     public void ex25() {
         Double h, b, obra, total;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe a altura do muro:");
         h = scanner.nextDouble();
         System.out.println("Informe a base do muro:");
@@ -411,7 +411,7 @@ public class ListaSequencial {
     // valor que será gasto para forrar todo o seu piso.
     public void ex26() {
         double comprimento, largura, total;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe o comprimento da sala:");
         comprimento = scanner.nextDouble();
         System.out.println("Informe a largura da sala:");
@@ -427,7 +427,7 @@ public class ListaSequencial {
     // criar um algoritmo que leia o custo de fábrica de um carro e apresenta na
     // tela o custo final ao consumidor.
     public void ex27() {
-        Scanner scanner = new Scanner(System.in);
+
         double vcarro, total;
         System.out.println("Informe o valor de fabrica do carro:");
         vcarro = scanner.nextDouble();
@@ -445,7 +445,7 @@ public class ListaSequencial {
     // tela o salário mensal do vendedor.vendedor
     public void ex28() {
         double quantVenda, vTotal, vVenda, salarioF, comi, salarioM;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe o salario fixo do funcionario:");
         salarioF = scanner.nextDouble();
         System.out.println("Informe a comissão por carro vendido:");
@@ -472,7 +472,7 @@ public class ListaSequencial {
     // a ser pago.
     public void ex29() {
         Double minutoL, minutoC, total;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Informe os minutos em chamada local:");
         minutoL = scanner.nextDouble() * 0.04;
         System.out.println("Informe os minutos em chamada pra celular:");
@@ -483,28 +483,128 @@ public class ListaSequencial {
         scanner.close();
     }
 
-    //Criar um algoritmo que efetue o cálculo da quantidade de litros de combustível gastos em uma viagem, utilizando-se um automóvel que faz 12 Km por litro. Para realizar o cálculo, o algoritmo deve ler o tempo gasto na viagem e a velocidade média durante a mesma. Desta forma, será possível obter a distância percorrida com a fórmula: . Tendo o valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula: . O algoritmo deve apresentar na tela os valores de velocidade média, tempo gasto na viagem, à distância percorrida e a quantidade de litros utilizados na viagem.viagem
-    public void ex30(){
+    // Criar um algoritmo que efetue o cálculo da quantidade de litros de
+    // combustível gastos em uma viagem, utilizando-se um automóvel que faz 12 Km
+    // por litro. Para realizar o cálculo, o algoritmo deve ler o tempo gasto na
+    // viagem e a velocidade média durante a mesma. Desta forma, será possível obter
+    // a distância percorrida com a fórmula: . Tendo o valor da distância, basta
+    // calcular a quantidade de litros de combustível utilizada na viagem com a
+    // fórmula: . O algoritmo deve apresentar na tela os valores de velocidade
+    // média, tempo gasto na viagem, à distância percorrida e a quantidade de litros
+    // utilizados na viagem.viagem
+    public void ex30() {
         double tempo, velocidade, distancia, litrosUsados;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("informe a velocidade media durante a viagem:");
         velocidade = scanner.nextDouble();
         System.out.println("Informe o tempo gasto na viagem:");
         tempo = scanner.nextDouble();
         distancia = tempo * velocidade;
         litrosUsados = distancia / 12;
-        System.out.printf("Velocidade media da viagem: %.2f Km/h\nTempo gasto: %.2f Horas/Min\nDistancia percorrida: %.2f Km\nQuantidade de combustivel consumida: %.2f Litros",velocidade,tempo,distancia,litrosUsados);
+        System.out.printf(
+                "Velocidade media da viagem: %.2f Km/h\nTempo gasto: %.2f Horas/Min\nDistancia percorrida: %.2f Km\nQuantidade de combustivel consumida: %.2f Litros",
+                velocidade, tempo, distancia, litrosUsados);
         scanner.close();
     }
 
-    //Criar um algoritmo que leia um valor L e calcula a área de um quadrado de lado L
-    public void ex31(){
-        double lado,area;
-         Scanner scanner = new Scanner(System.in);
+    // Criar um algoritmo que leia um valor L e calcula a área de um quadrado de
+    // lado L
+    public void ex31() {
+        double lado, area;
         System.out.println("Informe o valor do lado do quadrado:");
         lado = scanner.nextDouble();
         area = lado * lado;
-        System.out.printf("A area do quadrado é %.2f",area);
-          scanner.close();
+        System.out.printf("A area do quadrado é %.2f", area);
     }
+
+    // Criar um algoritmo que leia três números decimais: A, B e C. Em seguida,
+    // calcule e mostre:
+    // a área do triângulo retângulo que tem A por base e C por altura.
+    // a área do círculo de raio C. (π = 3.14159).
+    // a área do trapézio que tem A e B por bases e C por altura.
+    // a área do quadrado que tem lado B.
+    // a área do retângulo que tem lados A e B.
+    // o perímetro do retângulo que tem lados A e B.
+    public void ex32() {
+        double a, b, c, triangulo, circulo, trapezio, quadrado, retanguloA, retanguloP;
+        System.out.println("Informe o valor A:");
+        a = scanner.nextDouble();
+        System.out.println("Informe o valor B:");
+        b = scanner.nextDouble();
+        System.out.println("Informe o valor C:");
+        c = scanner.nextDouble();
+
+        triangulo = (a * c) / 2;
+        System.out.printf("Área do triangulo retangulo = %.2f\n", triangulo);
+
+        circulo = Math.PI * (Math.pow(c, 2));
+        System.out.printf("Área do circulo = %.2f\n", circulo);
+
+        trapezio = ((a + b) * c) / 2;
+        System.out.printf("Área do trapezio= %.2f\n", trapezio);
+
+        quadrado = b * b;
+        System.out.printf("Área do quadrado = %.2f\n", quadrado);
+
+        retanguloA = a * b;
+        System.out.printf("Área do retangulo = %.2f\n", retanguloA);
+
+        retanguloP = (a + b) * 2;
+        System.out.printf("Perimetro do retangulo  = %.2f\n", retanguloP);
+
+    }
+
+    // Criar um algoritmo que leia os dois lados ​A e ​B de um triângulo retângulo e calcula a hipotenusa do triângulo. Para esse caso, considere que hipotenusa =   . Dica: nesse programa, você deve usar a função matemática ​Math.sqrt() ​.
+    public void ex33(){
+        double a,b,h;
+        System.out.println("Informe o tamanho de A:");
+        a = Math.pow(scanner.nextDouble(),2);
+        System.out.println("Informe o tamanho de B:");
+        b = Math.pow(scanner.nextDouble(),2);
+        h = Math.sqrt(a+b);
+        System.out.printf("A hipotenusa do triangulo é: %.2f",h);
+    }
+
+    // Criar um algoritmo que leia quatro números e imprime a ​média aritmética​ dos quatro números.
+    public void ex34(){
+        double n1,n2,n3,n4,media;
+        System.out.println("Informe o primeiro número:");
+        n1 = scanner.nextDouble();
+        System.out.println("Informe o segundo número:");
+        n2 = scanner.nextDouble();
+        System.out.println("Informe o terceiro número:");
+        n3 = scanner.nextDouble();
+        System.out.println("Informe o quarto número:");
+        n4 = scanner.nextDouble();
+        media = (n1+n2+n3+n4) / 4;
+        System.out.printf("A média entre os números é: %.2f",media);
+    }
+
+    // Criar um algoritmo que leia o número de cadastro de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre na tela o número de cadastro e o salário do funcionário.
+    public void ex35(){
+        double numCad, ht, vh, s;
+        System.out.println("Informe o numero de cadastro");
+        numCad = scanner.nextDouble();
+        System.out.println("Informe as horas trabalhadas:");
+        ht = scanner.nextDouble();
+        System.out.println("Infome o valor da hora trabalhada:");
+        vh = scanner.nextDouble();
+        s = ht * vh;
+        System.out.printf("Numero de cadastro: %.0f\nSalario: R$ %.2f",numCad,s);
+    }
+
+    // Criar um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, calcular e imprimir o total a receber no final do mês
+    public void ex36(){
+        String nome;
+        double sf,tv,s;
+        System.out.println("Informe o nome do vendedor:");
+        nome = scanner.nextLine();
+        System.out.println("Informe o salario fixo:");
+        sf = scanner.nextDouble();
+        System.out.println("Informe o total de vendas:");
+        tv = scanner.nextDouble();
+        s = sf +(tv * 0.15);
+        System.out.printf("Vendedor: %s\nSalario: R$ %.2f",nome,s);
+    }
+
 }
