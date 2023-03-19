@@ -78,4 +78,39 @@ public class ListaRepeticao {
         }
         System.out.printf("%d ! = %d", n1,f);
 }
+    // Criar um algoritmo que leia um valor N e apresente na tela todos os valores inteiros entre 1 e N. Considere que o valor de N será sempre maior que zero.
+    public void ex09(){
+        int n;
+        System.out.println("informe um numero:");
+        n = scanner.nextInt();
+        for(int i = 1; i < n; i++){
+            System.out.println(i);
+        }
+    }
+
+    // Criar um algoritmo que efetue a leitura de 10 valores numéricos inteiros e, ao final, apresente na tela a soma e a média dos valores lidos.
+    public void ex10(){
+        int n, soma =0;
+        double media;
+        for( int i = 0; i < 10; i++){
+            System.out.printf("Informe o %d° numero:\n", i + 1);
+            n = scanner.nextInt();
+            soma += n;
+        }
+        media = soma/10;
+        System.out.printf("Soma: %d\nMédia: %.2f",soma,media);
+    }
+
+    // Criar um algoritmo que leia o número de horas trabalhadas diárias (NH) de um funcionário por um período de 20 dias (ele trabalhou todos os 20 dias) e apresente na tela o total de horas trabalhadas por ele nesse período.
+    public void ex11(){
+        int ht,soma= 0;
+        for(int i = 0; i < 20; i++){
+            System.out.printf("Informe o número de horas trabalhadas no %d° dia:\n ", i + 1);
+            ht = scanner.nextInt();
+            soma += ht;
+        }
+        System.out.printf("Total de horas trabalhadas: %d\n",soma);
+
+
+    }
 }
