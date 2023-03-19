@@ -335,195 +335,41 @@ public class ListaDecisao{
 
     // Criar um algoritmo que leia o peso e a altura de uma pessoa, calcule o seu IMC (Índice de Massa Corporal), e apresente na tela uma mensagem informando se a pessoa está ou não no seu peso ideal, de acordo com a tabela abaixo. A fórmula para calcular o IMC é: 
     public void ex26(){
-        System.out.println("Informe a altura:");
-        Double h = scanner.nextDouble();
+        Double peso, altura,imc;
         System.out.println("Informe o peso:");
-        Double w = scanner.nextDouble();
-        double imc = w / Math.pow(h,2.0);
-        if(imc < 20){
-            System.out.printf("IMC: %.2f\nAbaixo do peso!\n",imc);
-        }else if(imc <= 20 || imc < 25){
-            System.out.printf("IMC: %.2f\nPeso ideal!\n",imc);
+        peso = scanner.nextDouble();
+        System.out.println("Informe a altura:");
+        altura = scanner.nextDouble();
+        imc = peso / (altura * altura);
+        if(imc <20){
+            System.out.println("Abaixo do peso");
+        }else if(imc <=20 && imc < 25){
+            System.out.println("Peso ideal");
         }else{
-            System.out.printf("IMC: %.2f\nAcima do peso!\n",imc);
+            System.out.println("Acima do peso");
         }
     }
 
     // Criar um algoritmo que leia o código de origem de um produto e apresente na tela a sua procedência. A procedência obedece a seguinte tabela:
     public void ex27(){
-        System.out.println("Informe o código d eorigem do produto:");
-        int cod = scanner.nextInt();
-       if(cod == 5 || cod == 6){
+        int cod;
+        System.out.println("Informe o codigo do produto:");
+        cod = scanner.nextInt();
+        if(cod == 5 && cod == 6){
             System.out.println("Nordeste");
-       }else if(cod >= 7 && cod <=9){
-        System.out.println("Sudeste");
-       }else if(cod >= 10 && cod <=20){
-        System.out.println("Centro-Oeste");
-       }else if(cod >= 21 && cod <= 30){
-        System.out.println("Nordeste");
-       }else{
-        System.out.println("Cosigo invalido");
-       }
+        }else if(cod >= 7 && cod <=9){
+            System.out.println("Sudeste");
+        }else if(cod >= 10 && cod <= 20){
+            System.out.println("Centro-Oeste");
+        }else if(cod >= 21 && cod <= 30){
+            System.out.println("Nordeste");
+        }else{
+            System.out.println("Codigo invalido");
+        }
+
+
     }
 
-    // Criar um algoritmo que leia o salário de um funcionário e calcule o imposto de renda (IR) a ser pago a partir do salário do funcionário. Se o salário for menor que R$ 1.257,12 está isento do imposto. Se o salário for entre R$ 1.257,12 e R$ 2.510,00 (inclusive), a alíquota do imposto é 17%. Se o salário for superior a R$ 2.510,00, a alíquota do imposto é 28%. Apresentar na tela o salário bruto, o salário líquido e o valor do imposto.
-    public void ex28(){
-        double s, sb;
-        System.out.println("Informe o salário:");
-        s = scanner.nextDouble();
-        if(s < 1257.12){
-            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nIsento de imposto\n",s,s);
-        }else if(s > 1257.12 && s <= 2510){
-           sb = s+(s * 0.17);
-            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nImposto de 17%%\n",sb,s);
-        }else{
-          sb = s+(s * 0.28);
-            System.out.printf("Salário liquido: R$ %.2f\nSalário bruto: R$ %.2f\nImposto de 28%%\n",sb,s);
-        }
-    }
-    // Criar um algoritmo que leia o valor de três notas escolares de um aluno. Calcular a média aritmética e apresentar na tela a mensagem Aprovado se a média obtida for maior ou igual a 7; caso contrário, o algoritmo deve solicitar a nota de exame do aluno e calcular uma nova média aritmética entre a nota do exame e a primeira média aritmética. Se o valor da nova média for maior ou igual a 5, apresentar na tela a mensagem Aprovado em exame'; caso contrário, apresentar a mensagem Reprovado. Informar junto com cada mensagem o valor da média obtida.
-    public void ex29(){
-        double n1,n2,n3,media,exame;
-        System.out.println("Informe a primeira nota:");
-        n1 = scanner.nextDouble();
-        System.out.println("Informe a segunda nota:");
-        n2 = scanner.nextDouble();
-        System.out.println("Informe a terceira nota:");
-        n3 = scanner.nextDouble();
-        media = (n1+n2+n3) / 3;
-        if(media >= 7){
-            System.out.println("Aprovado!");
-        }else{
-            System.out.println("Informe a nota do exame:");
-            exame = scanner.nextDouble();
-            media = (media + exame) / 2;
-            if(media >=5){
-                System.out.println("Aprovado em exame!");
-            }else{
-                System.out.println("Reprovado!");
-            }
-        }
-    }
-
-    // Criar um algoritmo que leia dois números inteiros e apresente na tela uma mensagem indicando se são iguais ou diferentes. Se os números são diferentes, apresentar na tela o maior e o menor número (nesta sequência).
-    public void ex30(){
-        int n1,n2;
-        System.out.println("Informe o primeiro numero:");
-        n1 = scanner.nextInt();
-        System.out.println("Informe o segundo numero:");
-        n2 = scanner.nextInt();
-        if(n1 > n2){
-            System.out.printf("Maior: %d\nMenor: %d",n1,n2);
-        }else if(n1 < n2){
-            System.out.printf("Maior: %d\nMenor: %d",n2,n1);
-        }else{
-            System.out.println("Os numeros são iguais!");
-        }
-    }
-
-    // Criar um algoritmo que leia dois números inteiro positivos (A e B). Caso A seja igual a B, apresentar na tela a soma dos dois números. Caso contrário, apresentar na tela a diferença do maior pelo menor número.
-    public void ex31(){
-        int a,b;
-        System.out.println("Informe o primeiro numero:");
-        a = scanner.nextInt();
-        System.out.println("Informe o segundo numero:");
-        b = scanner.nextInt();
-        if(a == b){
-            System.out.printf("%d + %d = %d",a,b,(a+b));
-        }else{
-            if(a > b){
-                System.out.printf("Diferença entre %d e %d é: %d",a,b,(a-b));
-            }else{
-                System.out.printf("Diferença entre %d e %d é: %d",b,a,(b-a));
-            }
-        }
-    }
-
-    // Criar um algoritmo que represente uma calculadora de quatro operações. O algoritmo deve ler o valor de dois operandos e um operador (+, -, * ou /), efetuar o cálculo desejado e apresentar na tela o resultado.
-    public void ex32(){
-        int n1,n2;
-        String op;
-        System.out.println("Bem vindo a calculadora!");
-        System.out.println("Informe o primeiro numero:");
-        n1 = scanner.nextInt();
-        System.out.println("Informe a operação (+, -, * , /):");
-        op = scanner.next();
-        System.out.println("Informe o segundo numero:");
-        n2 = scanner.nextInt();
-        
-        switch(op){
-            case "+":
-                System.out.printf("%d + %d = %d",n1,n2,(n1+n2));
-                break;
-            case "-":
-                System.out.printf("%d - %d = %d",n1,n2,(n1-n2));
-                break;
-            case "*":
-                System.out.printf("%d x %d = %d",n1,n2,(n1*n2));
-                break;
-            case "/":
-                System.out.printf("%d / %d = %d",n1,n2,(n1/n2));
-                break;
-            default:
-                System.out.println("Operação invalida!");
-        }
-    }
-
-    // Criar um algoritmo que leia 3 notas de um aluno, calcule a sua média e apresente na tela a sua menção, de acordo com as regras abaixo:
-    public void ex33(){
-        double n1,n2,n3, media;
-        System.out.println("Informe a primeira nota:");
-        n1 = scanner.nextDouble();
-        System.out.println("Informe a segunda nota:");
-        n2 = scanner.nextDouble();
-        System.out.println("Informe a terceira nota:");
-        n3 = scanner.nextDouble();
-        media = (n1+n2+n3)/ 3;
-        if(media >= 9){
-            System.out.println("Menção MB");
-        }else if(media <= 7 && media <9){
-            System.out.println("Menção R");
-        }else if(media <= 5 && media <7){
-            System.out.println("Menção R");
-        }else{
-            System.out.println("Menção I");
-        }
-    }
-
-    // Criar um algoritmo que leia a idade de um nadador e apresenta na tela a sua categoria seguindo as regras:
-    public void ex34(){
-        int idade;
-        System.out.println("Informe a idade do nadador:");
-        idade = scanner.nextInt();
-        if(idade >= 5 && idade <= 7){
-            System.out.println("Infantil A");
-        }else if( idade >= 8 && idade <= 10){
-            System.out.println("Infantil B");
-        }else if(idade >= 11 && idade <= 13){
-            System.out.println("Juvenil A");
-        }else if(idade >=14 && idade <= 17){
-            System.out.println("Juvenil B");
-        }else if(idade > 18){
-            System.out.println("Sênior");
-        }else{
-            System.out.println("Idade invalida");
-        }
-    }
-
-    // Criar um algoritmo que leia o código de um livro e apresente na tela a categoria do livro, conforme a tabela abaixo:
-    public void ex35(){
-        String cod;
-        System.out.println("Informe o codigo do livro (A, B, C)");
-        cod = scanner.nextLine();
-        if(cod.equalsIgnoreCase("a")){
-            System.out.println("Ficção");
-        }else if(cod.equalsIgnoreCase("b")){
-            System.out.println("Não-Ficção");
-        }else if(cod.equalsIgnoreCase("c")){
-            System.out.println("Auto-Ajuda");
-        }else{
-            System.out.println("Inválido");
-        }
-    }
+    
 
 }
