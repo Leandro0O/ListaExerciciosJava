@@ -1,6 +1,9 @@
 package EstruturaRepeticao;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class ListaRepeticao {
     Scanner scanner = new Scanner(System.in);
@@ -110,7 +113,24 @@ public class ListaRepeticao {
             soma += ht;
         }
         System.out.printf("Total de horas trabalhadas: %d\n",soma);
+    }
 
+    // Um professor possui 3 turmas, e cada turma possui 5 alunos. Criar um algoritmo que leia a nota dos alunos de cada uma das turmas e apresente a média das notas por turma.
+    public void ex12(){
+        double media = 0,notas= 0;
+        for(int i = 1; i <=3; i++){
+            System.out.printf("Informe as notas da %d° turma:\n",(i));
+            for(int j = 0; j < 5; j++){
+                System.out.printf("Informe a nota do %d° aluno:\n",(j+1));
+               notas += scanner.nextDouble();
+                
+            }
+            media = notas / 5;
+            System.out.printf("A media da %d° turma é %.2f\n",(i),media);
 
+            notas -= notas;
+
+        }
+  
     }
 }
