@@ -217,15 +217,52 @@ public class ListaRepeticao {
         }
     }
 
-    // Criar um algoritmo que leia um número inteiro positivo e apresente na tela o número de algarismos deste número.
-    public void ex18(){
-        int n,x = 0;
+    // Criar um algoritmo que leia um número inteiro positivo e apresente na tela o
+    // número de algarismos deste número.
+    public void ex18() {
+        int n, x = 0;
         System.out.println("Informe um numero:");
         n = scanner.nextInt();
-        do{
-            x+=1;
+        do {
+            x += 1;
             n /= 10;
-        }while(n != 0);
-       System.out.printf("O numero %d %s",x, x > 1 ? "algarismos" : "algarismo");
+        } while (n != 0);
+        System.out.printf("O numero %d %s", x, x > 1 ? "algarismos" : "algarismo");
+    }
+
+    // Criar um algoritmo que apresente na tela os valores da conversão de graus
+    // Celsius em Fahrenheit, de 10 em 10, iniciando a contagem em 10 graus em
+    // terminando em 200 graus. A fórmula de conversão é: ​.
+    public void ex19() {
+        for (double i = 10; i <= 200; i += 10) {
+            double f = i * 1.8 + 32;
+            System.out.printf("%.2f C° = %.2f F°\n", i, f);
+        }
+    }
+
+    // Criar um algoritmo que apresente na tela os valores da conversão de graus
+    // Fahrenheit em Celsius, de 2 em 2, iniciando a contagem em 50 graus e
+    // terminando em 66 graus. A fórmula de conversão é: .
+    public void ex20() {
+        for (double i = 2; i <= 66; i += 2) {
+            double c = (i - 32) * 5 / 9;
+            System.out.printf("%.2f F° = %.2f C°\n", i, c);
+        }
+    }
+
+    // Criar um algoritmo que leia dois números inteiros (positivos e maiores que
+    // zero) e apresente na tela o resultado da multiplicação dos números. Não
+    // utilize o operador de multiplicação "*". Use para a solução deste problema
+    // estrutura de repetição (laço).
+    public void ex21() {
+        int n1, n2, soma = 0;
+        System.out.println("Informe primeiro numero:");
+        n1 = scanner.nextInt();
+        System.out.println("Informe segundo numero:");
+        n2 = scanner.nextInt();
+        for (int i = 1; i <= n2; i++) {
+            soma += n1;
+        }
+        System.out.printf("%d x %d = %d\n", n1, n2, soma);
     }
 }
