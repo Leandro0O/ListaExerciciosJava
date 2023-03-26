@@ -8,7 +8,7 @@ public class App {
         ListaDecisao decisao = new ListaDecisao();
         ListaRepeticao repeticao = new ListaRepeticao();
 
-        repeticao.ex21();
+        repeticao.ex30();
 
     }
 }

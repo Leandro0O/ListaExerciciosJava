@@ -265,4 +265,124 @@ public class ListaRepeticao {
         }
         System.out.printf("%d x %d = %d\n", n1, n2, soma);
     }
+
+    // Criar um algoritmo que leia dois números inteiros (positivos e maiores que zero) e apresente na tela o resultado inteiro da divisão do primeiro pelo segundo número. Não utilize qualquer operador de divisão nem qualquer função para obter o resultado inteiro da divisão. Use para a solução deste problema estrutura de repetição (laço).
+    public void ex22(){
+       int n1, n2, soma = 0;
+        System.out.println("Informe primeiro numero:");
+        n1 = scanner.nextInt();
+        System.out.println("Informe segundo numero:");
+        n2 = scanner.nextInt();
+        for (int i = n1; i >= n2; i -= n2) {
+            soma ++;
+        }
+        System.out.printf("%d / %d = %d\n", n1, n2, soma);
+    }
+
+    // Criar um algoritmo que leia uma base e um expoente e apresente na tela o valor da potência da base pelo expoente. Considere apenas a entrada de valores inteiros e positivos (maiores que zero). Não utilize qualquer função para calcular a potência. Use para a solução deste problema estrutura de repetição (laço).
+    public void ex23(){
+        int n1, n2, soma = 1;
+        System.out.println("Informe primeiro numero:");
+        n1 = scanner.nextInt();
+        System.out.println("Informe segundo numero:");
+        n2 = scanner.nextInt();
+        for (int i = 1; i <= n2; i++) {
+            soma *= n1;
+        }
+        System.out.printf("%d ^ %d = %d\n", n1, n2, soma);
+    }
+
+    // Criar um algoritmo que apresente na tela a série de Fibonacci até o décimo quinto termo. A série de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... etc., caracterizando-se pela soma de um termo posterior com o seu anterior subseqüente.
+    public void ex24(){
+        int n1 = 1, n2 = 0;
+        System.out.println(n1);
+        for(int i = 0; i < 15;i++){
+            n1+=n2;
+            n2 = n1 - n2;
+            System.out.println(n1);
+        }
+    }
+
+    // Criar um algoritmo que apresente todos os números inteiros divisíveis por 4 existentes na faixa de 1 a 200.
+    public void ex25(){
+        for(int  i = 0; i <= 200; i++){
+            if( i % 4 ==  0){
+                System.out.println(i);
+            }
+        }
+    }
+
+     // Criar um algoritmo que apresente todos os números inteiros ímpares, existentes na faixa de 0 a 25.
+     public void ex26(){
+        for( int i = 1 ; i <= 25; i+=2){
+           System.out.println(i);
+        }
+     }
+     
+     // Criar um algoritmo que apresente a média dos números inteiros divisíveis por 5 existentes na faixa de 0 a 136.
+     public void ex27(){
+        for(int  i = 0; i <= 136; i++){
+            if( i % 5 == 0){
+                System.out.println(i);
+            }
+        }
+     }
+
+    //  Criar um algoritmo que apresente a média dos números inteiros divisíveis por 7 existentes na faixa de 0 a 128.
+    public void ex28(){
+        double media,soma = 0;
+        for(int  i = 0; i <= 128; i++){
+            if( i % 7 == 0){
+                soma+=i;
+            }
+        }
+        media = soma / 128;
+        System.out.printf("Media: %.2f",media);
+    }
+
+    // Criar um algoritmo que conte de 1 a 100 e a cada múltiplo de 10 apresenta a mensagem Múltiplo de 10.
+    public void ex29(){
+        for(int i = 0; i <= 100; i++){
+            if(i % 10 == 0){
+                System.out.printf("%d é multiplo de 10\n",i);
+           }
+        }
+    }
+
+    // Criar um algoritmo que apresente o resultado da soma e da média aritmética dos valores inteiros pares situados na faixa numérica de 50 a 70.
+    public void ex30(){
+        double soma = 0, media;
+        for(int i = 0; i  <=70;i+=2){
+            soma+=i;
+        }
+        media = soma / 70;
+        System.out.printf("Soma = %.0f\nMedia = %.2f\n",soma,media);
+    }
+
+    // Criar um algoritmo que leia 15 números inteiros e apresente a soma dos números divisíveis por 3.
+    public void ex31(){
+        int n,soma = 0;
+        for(int i = 0; i <= 15;i++){
+            System.out.printf("Informe o %d° numero:",(i+1));
+            n = scanner.nextInt();
+            if(n % 3 == 0){
+                soma+=i;
+            }
+        }
+        System.out.printf("Soma: %d",soma);
+    }
+
+    // Criar um algoritmo que leia a idade de 10 pessoas e apresente a quantidade de pessoas maiores de idade (Uma pessoa é maior de idade se sua idade for maior ou igual a 18 anos).
+    public void ex32(){
+        int n, m = 0;
+        for(int i = 0; i <= 10;i++){
+            System.out.printf("Informe a idade da  %d° pessoa:",(i+1));
+            n = scanner.nextInt();
+            if(n >= 18){
+                m++;
+            }
+        }
+        System.out.printf("Pessoas maiores de 18 anos: %d",m);
+    }
+
 }
