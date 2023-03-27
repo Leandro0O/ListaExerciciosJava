@@ -385,4 +385,44 @@ public class ListaRepeticao {
         System.out.printf("Pessoas maiores de 18 anos: %d",m);
     }
 
+    // Criar um algoritmo que leia 15 valores inteiros positivos e apresente a soma dos valores menores que 40.
+    public void ex33(){
+        int n, soma= 0;
+        for(int i = 0; i < 15;i++){
+            System.out.printf("Informe o %d° valor:\n",(i+1));
+            n = scanner.nextInt();
+            if(n < 40){
+                soma+=i;
+            }
+        }
+        System.out.printf("Soma: %d",soma);
+    }
+    
+    // Criar um algoritmo que leia 10 valores inteiros e apresente a quantidade de números negativos.
+    public void ex34(){
+        int n, neg= 0;
+        for(int i = 0 ; i < 10;i++){
+            System.out.printf("Informe o %d° valor:\n",(i+1));
+            n = scanner.nextInt();
+            if(n< 0){
+                neg++;
+            }
+        }
+        System.out.printf("Quantidade de números negativos: %d",neg);
+    }
+
+    // Criar um algoritmo que leia 10 valores inteiros e apresente na tela quantos destes valores estão no intervalo [10,20] e quantos deles estão fora deste intervalo.
+    public void ex35(){
+        int n, cont= 0;
+        for(int i = 0 ; i < 10;i++){
+            System.out.printf("Informe o %d° valor:\n",(i+1));
+            n = scanner.nextInt();
+            if(n > 10 && n < 20){
+                cont++;
+            }
+        }
+        System.out.printf("Quantidade de números entre 10 e 20: %d",cont);
+    }
+
+
 }
