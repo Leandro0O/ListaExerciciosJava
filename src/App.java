@@ -6,7 +6,7 @@ import java.util.Scanner;
 import EstruturaDecisao.ListaDecisao;
 import EstruturaRepeticao.ListaRepeticao;
 import Funcoes.ListaFuncoes;
-
+import Vetores.ListaVetores;
 
 
 public class App {
@@ -15,16 +15,19 @@ public class App {
         ListaDecisao decisao = new ListaDecisao();
         ListaRepeticao repeticao = new ListaRepeticao();
         ListaFuncoes funcoes = new ListaFuncoes();
+        ListaVetores vetores = new ListaVetores();
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        int n1, n2;
-        System.out.println("Informe o primeiro numero:");
-        n1 = scanner.nextInt();
-        System.out.println("Informe o segundo numero:");
-        n2 = scanner.nextInt();
+        // int n1, n2;
+        // System.out.println("Informe o primeiro numero:");
+        // n1 = scanner.nextInt();
+        // System.out.println("Informe o segundo numero:");
+        // n2 = scanner.nextInt();
 
-        System.out.printf("%d + %d = %d\n", n1, n2, funcoes.soma(n1, n2));
+        // System.out.printf("%d + %d = %d\n", n1, n2, funcoes.soma(n1, n2));
+
+        vetores.ex03();
         
     }
 }
