@@ -1,6 +1,6 @@
 package Funcoes;
 
-import java.util.Scanner;
+
 
 public class ListaFuncoes {
    

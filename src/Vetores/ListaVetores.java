@@ -1,5 +1,4 @@
 package Vetores;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -57,4 +56,24 @@ public class ListaVetores {
         System.out.printf("%d + %d = %d\n",n1,n2,soma);
 
     }
+
+    // Criar um programa que leia um vetor de 12 posições de valores inteiros e em seguida leia um valor inteiro X qualquer. Fazer uma busca do valor de X no vetor lido e informar a posição em que foi encontrado ou se não foi encontrado. 
+    public void ex04(){
+        int v [] = new int[5];
+        int n,pos = 0;
+        for(int i = 0; i < v.length; i++){
+            System.out.printf("Informe o %d° elemento:\n", (i+1));
+            v[i] = scanner.nextInt();
+    }
+        System.out.println("Informe um numero para saber sua posição no verto:");
+        n = scanner.nextInt();
+        for(int i = 0; i < v.length; i++){
+            if(v[i] == n){
+                pos = i;
+                System.out.printf("%d encontrado na posição %d",n,pos);
+            }
+        }
+        
+       
+}
 }

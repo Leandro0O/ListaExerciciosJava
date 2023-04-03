@@ -1,8 +1,6 @@
 import EstruturaSequencial.ListaSequencial;
 import Funcoes.ListaFuncoes;
-
 import java.util.Scanner;
-
 import EstruturaDecisao.ListaDecisao;
 import EstruturaRepeticao.ListaRepeticao;
 import Funcoes.ListaFuncoes;
@@ -27,7 +25,7 @@ public class App {
 
         // System.out.printf("%d + %d = %d\n", n1, n2, funcoes.soma(n1, n2));
 
-        vetores.ex03();
+        vetores.ex04();
         
     }
 }
